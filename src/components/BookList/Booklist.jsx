@@ -21,7 +21,7 @@ year: '',
   render() {
     return (
    <>
-  <form id="book-form" autocomplete="off" onSubmit={this.submitHandler}>
+  <form  className='  bg-orange-500  ' autocomplete="off" onSubmit={this.submitHandler}>
                     <div className="form-group">
                         <label for="title">Title</label>
                         <input type="text" id="title" className="form-control" onChange={this.titleHandler} value={this.state.title} />
@@ -47,9 +47,7 @@ year: '',
                         </tr>
                     </thead>
                     <tbody id="book-list">
-                        {this.state.books.map(book => (
-                            <Book {...book} key={book.id} />
-                        ))}
+                      
                     </tbody>
                 </table>
 
