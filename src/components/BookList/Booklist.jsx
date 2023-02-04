@@ -19,7 +19,8 @@ year: '',
 
     }
     submitHandler(event){
-
+event.preventDefault()
+let {titile,author,year}=this.state
 
     }
     titleHandler(event){
@@ -35,7 +36,7 @@ year: '',
   render() {
     return (
    <>
-  <form  className='  bg-orange-500  ' autocomplete="off" onSubmit={this.submitHandler}>
+  <form  className='  bg-orange-500 p-6 w-2/5 m-auto  ' autocomplete="off" onSubmit={this.submitHandler}>
                     <div className=" my-2">
                         <label for="title">Title</label>
                         <input type="text"  className=" block w-full rounded-full p-2" onChange={this.titleHandler} value={this.state.title} />
@@ -52,7 +53,7 @@ year: '',
                     </div>
                     <input type="submit" value="Add Book" className="btn btn-warning btn-block add-btn" />
                 </form>
-                <table class="table table-striped mt-5 text-center">
+                <table class=" w-2/5 m-auto my-3">
                     <thead>
                         <tr>
                             <th>Title</th>

@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components{
+
+body{
+    background-image: url(../src/components/images/pexels-shawn-reza-21120.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+}
+.BK{
+   
+
+}
+
+
+
+
+}
