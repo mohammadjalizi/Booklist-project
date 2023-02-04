@@ -41,14 +41,14 @@ year: '',
                         <input type="text"  className=" block w-full rounded-full p-2" onChange={this.titleHandler} value={this.state.title} />
                     </div>
 
-                    <div className="form-group">
+                    <div className="my-2">
                         <label for="author">Author</label>
                         <input type="text"  className=" block w-full rounded-full" onChange={this.authorHandler} value={this.state.author} />
                     </div>
 
-                    <div className="form-group">
+                    <div className="my-2">
                         <label for="year">Year</label>
-                        <input type="text" id="year" className="form-control" onChange={this.yearHandler} value={this.state.year} />
+                        <input type="text"  className=" block w-full  rounded-full" onChange={this.yearHandler} value={this.state.year} />
                     </div>
                     <input type="submit" value="Add Book" className="btn btn-warning btn-block add-btn" />
                 </form>
