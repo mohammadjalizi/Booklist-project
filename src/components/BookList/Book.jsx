@@ -6,7 +6,7 @@ export default class Book extends Component {
       <>
     <thead>
                         <tr>
-                            <th>Title</th>
+                            <th>{prosp.titile}</th>
                             <th>Author</th>
                             <th>Year</th>
                         </tr>
