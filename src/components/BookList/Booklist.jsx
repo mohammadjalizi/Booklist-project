@@ -76,7 +76,7 @@ g
                         </tr>
                     </thead>
                     <tbody id="book-list">
-                      <Book    />
+                      <Book/>
                     </tbody>
                 </table>
 
