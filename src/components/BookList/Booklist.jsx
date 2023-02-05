@@ -76,7 +76,7 @@ g
                         </tr>
                     </thead>
                     <tbody id="book-list">
-                      <Book/>
+                      <book/>
                     </tbody>
                 </table>
 
@@ -88,5 +88,3 @@ g
     )
   }
 }
-//  git add .
-//  git add .
