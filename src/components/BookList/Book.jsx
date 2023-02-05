@@ -8,7 +8,7 @@ export default class Book extends Component {
                         <tr>
                             <th>{prosp.titile}</th>
                             <th>{this.props.author}</th>
-                            <th>Year</th>
+                            <th>{this.state.year}</th>
                         </tr>
                     </thead>
       
