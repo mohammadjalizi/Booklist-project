@@ -39,7 +39,9 @@ g
         })
     }
     yearHandler(event){
-
+        this.setState({
+            year:event.target.value
+        })
     }
   render() {
     return (
