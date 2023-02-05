@@ -34,7 +34,9 @@ this.setState({
 g
     }
     authorHandler(event){
-
+        this.setState({
+            author:event.target.value
+        })
     }
     yearHandler(event){
 
