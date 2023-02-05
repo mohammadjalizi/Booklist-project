@@ -77,7 +77,7 @@ g
                     </thead>
                     <tbody id="book-list">
                       <book/>
-                   <p>mohammadjalzi</p>
+                   <p></p>
                     </tbody>
                 </table>
 
