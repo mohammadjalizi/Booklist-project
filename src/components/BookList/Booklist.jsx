@@ -22,10 +22,14 @@ year: '',
 event.preventDefault()
 let {titile,author,year}=this.state
 
- this.setState({
+ this.state={
+
+titilet,
+year,
+author
 
 
- })
+ }
     }
     titleHandler(event){
 this.setState({
