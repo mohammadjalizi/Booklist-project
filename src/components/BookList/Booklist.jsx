@@ -77,7 +77,7 @@ g
                     </thead>
                     <tbody id="book-list">
                       <book/>
-                      <P></P>
+                   
                     </tbody>
                 </table>
 
