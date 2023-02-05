@@ -7,7 +7,7 @@ export default class Book extends Component {
     <thead>
                         <tr>
                             <th>{prosp.titile}</th>
-                            <th>Author</th>
+                            <th>{this.props.author}</th>
                             <th>Year</th>
                         </tr>
                     </thead>
