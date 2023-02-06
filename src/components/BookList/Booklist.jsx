@@ -89,7 +89,7 @@ g
                     <tbody id="book-list">
                       {this.state.books.map(book=>(
 
-                        <Book/>
+                        <Book  {...Book} key{book.id}   />
                       ))}
                
                     </tbody>
