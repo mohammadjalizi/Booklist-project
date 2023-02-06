@@ -23,9 +23,9 @@ this.submitHandler=this.submitHandler.bind(this)
     }
     submitHandler(event){
 event.preventDefault()
-let {titile,author,year}=this.state
+let {titile,author, year}=this.state
 
-if(titile && author&&year){
+if(titile && author&& year){
 let NewBook={
 id:this.state.books.length+1,
 titile,
@@ -86,10 +86,10 @@ this.setState({
                             <th>Year</th>
                         </tr>
                     </thead>
-                    <tbody id="book-list">
-                      {this.state.books.map(item=>(
+                    <tbody  className=' my-2 '>
+                      {this.state.books.map(book=>(
 
-                        <Book />
+                        <Book {...book} key={book}/>
                       ))}
                
                     </tbody>
