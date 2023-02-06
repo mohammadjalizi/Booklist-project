@@ -22,14 +22,25 @@ year: '',
 event.preventDefault()
 let {titile,author,year}=this.state
 
- this.state={
+if(titile && author&&year){
+let NewBook={
+id:this.state.books.length+1,
+titile,
+author,year
 
-titilet,
-year,
-author
+
+}
+this.setState({
+
+    books:{...this.state.books,NewBook}
+
+}
+
+   
+)
 
 
- }
+}
     }
     titleHandler(event){
 this.setState({
@@ -76,8 +87,11 @@ g
                         </tr>
                     </thead>
                     <tbody id="book-list">
-                      <book/>
-                   <p></p>
+                      {this.state.books.map(book=>(
+
+                        <Book/>
+                      ))}
+               
                     </tbody>
                 </table>
 
