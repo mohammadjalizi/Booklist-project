@@ -80,7 +80,7 @@ this.setState({
                 </form>
                 <table className=" w-2/5 m-auto my-3">
                     <thead>
-                        <tr>
+                        <tr className=' bg-gradient-to-r from-cyan-500 to-blue-500 p-8 '>
                             <th>Title</th>
                             <th>Author</th>
                             <th>Year</th>
