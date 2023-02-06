@@ -76,11 +76,11 @@ this.setState({
                         <label for="year">Year</label>
                         <input type="text"  className=" block w-full  rounded-full" onChange={this.yearHandler} value={this.state.year} />
                     </div>
-                    <input type="submit" value="Add Book" className="btn btn-warning btn-block add-btn" />
+                    <input type="submit" value="Add Book" className=" bg-gradient-to-r from-teal-200 to-teal-500 p-2  rounded-3xl w-full  cursor-pointer"/>
                 </form>
                 <table className=" w-2/5 m-auto my-3">
                     <thead>
-                        <tr className=' bg-gradient-to-r from-cyan-500 to-blue-500 p-8 '>
+                        <tr className=' bg-gradient-to-r from-cyan-500 to-blue-500 p- '>
                             <th>Title</th>
                             <th>Author</th>
                             <th>Year</th>
