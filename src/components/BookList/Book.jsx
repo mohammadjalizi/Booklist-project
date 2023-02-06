@@ -5,10 +5,10 @@ export default class Book extends Component {
     return (
       <>
 
-                        <tr className='  bg-[#bfdbfe] P-2 gap-4'>
-                            <th className=' my-2'>{this.props.titile}</th>
-                            <th className=' my-2'>{this.props.author}</th>
-                            <th className=' my-2'>{this.props.year}</th>
+                        <tr className='  '>
+                            <th className=' m'>{this.props.titile}</th>
+                            <th className=' m'>{this.props.author}</th>
+                            <th className=' m-4'>{this.props.year}</th>
                         </tr>
                  
       

@@ -86,7 +86,7 @@ this.setState({
                             <th>Year</th>
                         </tr>
                     </thead>
-                    <tbody  className=' my-2 '>
+                    <tbody  className='  bg-red-500 py-4 '>
                       {this.state.books.map(book=>(
 
                         <Book {...book} key={book}/>
