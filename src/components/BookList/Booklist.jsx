@@ -16,7 +16,9 @@ year: '',
 
 }
 this.titleHandler=this.titleHandler.bind(this)
-this.author=this.author.bind(this)
+this.authorHandler=this.authorHandler.bind(this)
+this.yearHandler=this.yearHandler.bind(this)
+this.submitHandler=this.submitHandler.bind(this)
 
     }
     submitHandler(event){
@@ -27,13 +29,14 @@ if(titile && author&&year){
 let NewBook={
 id:this.state.books.length+1,
 titile,
-author,year
+author,
+year
 
 
 }
 this.setState({
 
-    books:{...this.state.books,NewBook}
+    books:[...this.state.books,NewBook]
 
 }   
 )
@@ -58,9 +61,9 @@ this.setState({
   render() {
     return (
    <>
-  <form  className='  bg-orange-500 p-6 w-2/5 m-auto  ' autocomplete="off" onSubmit={this.submitHandler}>
+  <form  className='  bg-orange-500 p-6 w-2/5 m-auto  '    autocomplete="off"  onSubmit={this.submitHandler}>
                     <div className=" my-2">
-                        <label for="title">Title</label>
+                        <label for="title">Titlela </label>
                         <input type="text"  className=" block w-full rounded-full p-2" onChange={this.titleHandler} value={this.state.titile} />
                     </div>
 
@@ -75,7 +78,7 @@ this.setState({
                     </div>
                     <input type="submit" value="Add Book" className="btn btn-warning btn-block add-btn" />
                 </form>
-                <table class=" w-2/5 m-auto my-3">
+                <table className=" w-2/5 m-auto my-3">
                     <thead>
                         <tr>
                             <th>Title</th>
@@ -84,9 +87,9 @@ this.setState({
                         </tr>
                     </thead>
                     <tbody id="book-list">
-                      {this.state.books.map(book=>(
+                      {this.state.books.map(item=>(
 
-                        <Book  {...Book} key={book.id}   />
+                        <Book  {...item} key={item.id}   />
                       ))}
                
                     </tbody>
@@ -100,4 +103,5 @@ this.setState({
     )
   }
 }
+
 // 
