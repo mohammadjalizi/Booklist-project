@@ -89,7 +89,7 @@ this.setState({
                     <tbody id="book-list">
                       {this.state.books.map(item=>(
 
-                        <Book  {...item} key={item.id}   />
+                        <Book />
                       ))}
                
                     </tbody>
