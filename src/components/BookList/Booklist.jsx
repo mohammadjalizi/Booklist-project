@@ -46,7 +46,7 @@ this.setState({
 this.setState({
     titile:event.target.value
 })
-g
+
     }
     authorHandler(event){
         this.setState({
@@ -64,7 +64,7 @@ g
   <form  className='  bg-orange-500 p-6 w-2/5 m-auto  ' autocomplete="off" onSubmit={this.submitHandler}>
                     <div className=" my-2">
                         <label for="title">Title</label>
-                        <input type="text"  className=" block w-full rounded-full p-2" onChange={this.titleHandler} value={this.state.title} />
+                        <input type="text"  className=" block w-full rounded-full p-2" onChange={this.titleHandler} value={this.state.titile} />
                     </div>
 
                     <div className="my-2">
@@ -89,7 +89,7 @@ g
                     <tbody id="book-list">
                       {this.state.books.map(book=>(
 
-                        <Book  {...Book} key{book.id}   />
+                        <Book  {...Book} key={book.id}   />
                       ))}
                
                     </tbody>
