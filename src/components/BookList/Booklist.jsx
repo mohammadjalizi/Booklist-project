@@ -15,7 +15,8 @@ year: '',
 
 
 }
-
+this.titleHandler=this.titleHandler.bind(this)
+this.author=this.author.bind(this)
 
     }
     submitHandler(event){
@@ -34,12 +35,8 @@ this.setState({
 
     books:{...this.state.books,NewBook}
 
-}
-
-   
+}   
 )
-
-
 }
     }
     titleHandler(event){
